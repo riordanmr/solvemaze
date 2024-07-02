@@ -1,0 +1,42 @@
+# 2024-07-01  There's a maze in the 2024-05-26 issue of NYT. 
+# I thought it would be interesting to write a Go program to solve it.  
+# I'm gathering a description of the maze here.
+# I am describing only those nodes in the maze where you have a choice 
+# of which way to go. Each such node will have a number, and each node 
+# will have letters describing the choices. So far, it looks as if each 
+# node in the maze has only two choices, so the directions to go will be
+#  "a" and "b". I have written on the paper maze itself which is a and b. 
+#
+# Below I have written notation which describes what happens when you go a certain way in the maze. 
+# 1a 2  means that if you start at node 1 and take direction a, you get to node 2.
+# 1b x  means that if you start at node 1 and take direction b, you eventually reach a dead end.
+# 2a e  means that if you start at node 2 and take direction a, you will reach the end.
+
+1a x
+1b 2
+2a x
+2b 3
+3a x
+3b 4
+4a 5
+5a 6
+6a x
+6b 7
+7a 8
+8a 9
+9a 10
+10a x
+10b 11
+11a x
+11b 12
+12a 13
+12b x
+13a e
+13b x
+9b 14
+14a x
+14b x
+8b x
+7b x
+5b x
+4b x
